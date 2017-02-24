@@ -1,4 +1,4 @@
-exports.config={"name":"\"ghf2018\"","description":"\"Geneva Health Forum 2018 Progressive App.\"","author":"\"tolokoban\"","version":"\"0.0.3\"","major":"0","minor":"0","revision":"3","date":"2017-02-24T11:37:52.000Z","consts":{}};
+exports.config={"name":"\"ghf2018\"","description":"\"Geneva Health Forum 2018 Progressive App.\"","author":"\"tolokoban\"","version":"\"0.0.7\"","major":"0","minor":"0","revision":"7","date":"2017-02-24T14:15:49.000Z","consts":{}};
 var currentLang = null;
 exports.lang = function(lang) {
     if (lang === undefined) {

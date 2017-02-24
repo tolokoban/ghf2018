@@ -44,7 +44,7 @@ div.tp4-simple-layout > div.body > div > div {
 div.tp4-simple-layout > div.body > div > div.nav {
     position: relative;
     width: 300px;
-    overflow: visible;
+    overflow: auto;
     padding: 0;
 }
 
@@ -59,7 +59,6 @@ div.tp4-simple-layout > div.body > div > div.nav > div {
     padding: .5rem;
     padding-top: 1rem;
     background: #fff;
-    overflow: auto;
     z-index: 1;
     transition: transform .3s;
     transform: translateX(0);
@@ -72,6 +71,7 @@ div.tp4-simple-layout.hide-nav > div.body > div > div.nav {
 div.tp4-simple-layout.hide-nav > div.body > div > div.nav > div {
     transition: transform .3s;
     transform: translateX(-100%);
+    overflow: auto;
 }
 
 

@@ -12,7 +12,7 @@ var DB = require("tfw.data-binding");
 var SimpleLayout = function(opts) {
     var headerContent = $.div( 'flex' );
     var logo = $.div( 'logo' );
-    $.clear( logo, $.tag( 'img', { src: "icon-128.png", style: "width:100%" } ) );
+    $.clear( logo, $.tag( 'img', { alt: "Geneva", src: "icon-128.png", style: "width:100%" } ) );
     var header = $.tag( 'header', [
         headerContent, $.div( 'hemidisk' ), logo
     ] );
