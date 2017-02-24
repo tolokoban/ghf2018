@@ -1,8 +1,58 @@
-<w-html app="main">
-    <section>
-        <center>
-            <wdg:button $text="English" $icon="flag-en" />
-            <wdg:button $text="Français" $icon="flag-fr" />
-        </center>
-    </section>
-</w-html>
+<x-html app="main">
+    <x-widget id="layout" name="tp4.simple-layout" showNav="false">
+        <header>
+            <wdg:icon $button="true" 
+                      $content="menu" 
+                      $type="accent" 
+                      $size="1em" 
+                      $color1="rgba(0,0,0,.8)"
+                      $color0="transparent" 
+                      slot:action="onMenu"/>
+            <div class='only-small'>GHF 2018</div>
+            <div class='only-big'>Geneva Health Forum 2018</div>
+            
+        </header>
+        <content>
+            <div class="title">Geneva Health Forum</div>
+            <div class="subtitle">The Forum of Innovative Practices in Global Health</div>
+
+            <div class="center">
+                <button id="call-for-abstracts">Call for Abstracts</button>
+            </div>
+            
+            <p>
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+            </p>
+            <p>
+Non expedita ut illum nam inventore ipsum. Excepturi consequatur nihil consequuntur quidem voluptatibus atque nobis. Ipsum modi sed ut expedita inventore voluptates ex. Et nulla non nostrum quisquam molestiae harum.
+Sunt minus sed voluptatum. Recusandae repellendus libero totam et fuga. Non qui recusandae quis voluptatibus itaque animi dolorem. Sit vel sequi aut iste ut est. Dolor est voluptatibus accusamus est repellendus et rerum. Quia voluptate voluptatibus cupiditate mollitia consectetur ullam omnis.
+Similique nulla voluptatem aperiam sit sed. Nobis numquam nemo consequatur illum blanditiis. Quia velit aspernatur aut non.
+Fuga asperiores magnam iste quia magnam dolorum necessitatibus. Ab autem accusantium sapiente molestias. Voluptate et dicta doloremque illo veniam facilis quae. Distinctio sapiente sapiente quidem. Laboriosam impedit rerum perferendis accusantium ut.
+Et qui in tempore. Numquam id qui similique. Natus et magnam quia tempore qui sit et. Eos eligendi inventore impedit expedita.
+            </p>
+
+        </content>
+        <nav>
+            <div class="center">
+                <wdg:button $href="https://twitter.com/Genevaforum/"
+                            $type="simple" $icon="twitter" $text="Twitter"/>
+                <wdg:button $href="https://www.youtube.com/user/genevahealthforum/"
+                            $type="simple" $icon="youtube" $text="YouTube"/>
+                <wdg:button $href="https://plus.google.com/103434147395370304207"
+                            $type="simple" $icon="google+" $text="Google+"/>
+                <wdg:button $href="http://ghf2018.g2hp.net/#myModal"
+                            $type="simple" $icon="mail" $text="Contact"/>
+            </div>
+            <hr/>
+            <p>
+Sunt minus sed voluptatum. Recusandae repellendus libero totam et fuga. Non qui recusandae quis voluptatibus itaque animi dolorem. Sit vel sequi aut iste ut est. Dolor est voluptatibus accusamus est repellendus et rerum. Quia voluptate voluptatibus cupiditate mollitia consectetur ullam omnis.
+
+Similique nulla voluptatem aperiam sit sed. Nobis numquam nemo consequatur illum blanditiis. Quia velit aspernatur aut non.
+
+Fuga asperiores magnam iste quia magnam dolorum necessitatibus. Ab autem accusantium sapiente molestias. Voluptate et dicta doloremque illo veniam facilis quae. Distinctio sapiente sapiente quidem. Laboriosam impedit rerum perferendis accusantium ut.
+
+Et qui in tempore. Numquam id qui similique. Natus et magnam quia tempore qui sit et. Eos eligendi inventore impedit expedita.
+            </p>
+        </nav>
+    </x-widget>
+</x-html>

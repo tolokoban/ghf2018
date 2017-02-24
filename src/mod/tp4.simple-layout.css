@@ -1,0 +1,221 @@
+div.tp4-simple-layout {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+}
+
+div.tp4-simple-layout > div.body {
+    display: table;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 64px);
+    overflow: hidden;
+    background-repeat:   no-repeat;
+    background-position: 50% top;
+    background-size:     contain;
+    background-image:    url(main/background.jpg);
+}
+
+div.tp4-simple-layout > div.body > div {
+    display: table-row;
+    height: 100%;
+}
+
+div.tp4-simple-layout > div.body > div > div {
+    display: table-cell;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+div.tp4-simple-layout > div.body > div > div.nav {
+    position: relative;
+    width: 300px;
+    overflow: visible;
+    padding: 0;
+}
+
+div.tp4-simple-layout > div.body > div > div.nav > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: calc(100vh - 64px);
+    padding: .5rem;
+    padding-top: 1rem;
+    background: #fff;
+    overflow: auto;
+    z-index: 1;
+    transition: transform .3s;
+    transform: translateX(0);
+}
+
+div.tp4-simple-layout.hide-nav > div.body > div > div.nav {
+    width: 0;
+}
+
+div.tp4-simple-layout.hide-nav > div.body > div > div.nav > div {
+    transition: transform .3s;
+    transform: translateX(-100%);
+}
+
+
+div.tp4-simple-layout > div.body > div > div.content {
+    padding-top: 48px;
+}
+
+div.tp4-simple-layout > header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 64px;
+    border-radius: 0 64px 0 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,.5);
+    background: rgba(255,255,255,.8);
+    z-index: 99;
+    font-size: 32px;
+}
+
+div.tp4-simple-layout > header > div.flex {
+    margin: 0 92px 0 0;
+    display: table;
+    height: 64px;
+}
+
+div.tp4-simple-layout > header > div.flex > div {
+    display: table-cell;
+    height: 64px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 .5rem;
+}
+
+div.tp4-simple-layout > header > div.flex > div > div {
+    margin: 0;
+    padding: 0;
+}
+
+div.tp4-simple-layout > header > div.hemidisk {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 128px;
+    height: 64px;
+    border-radius: 0 0 64px 64px;
+    box-shadow: 0 8px 8px rgba(0,0,0,.5);
+    background: rgba(255,255,255,.5);
+}
+
+div.tp4-simple-layout > header > div.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 128px;
+    height: 128px;
+    padding: 0;
+}
+
+
+@media (max-width: 600px) {
+    div.tp4-simple-layout > div.body > div {
+        position: relative;
+        display: block;
+        height: calc(100vh - 48px);
+    }
+
+    div.tp4-simple-layout > div.body > div > div {
+        position: absolute;
+    }
+
+    div.tp4-simple-layout > div.body > div > div.content {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.tp4-simple-layout > div.body > div > div.nav {
+        box-shadow: 0 -6px 12px rgba(0,0,0,.5);
+        position: absolute;
+        left: 0;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        max-height: calc(60vh);
+        -ms-max-height: 30vh;
+        transition: transform .3s;
+        transform: translateY(0);
+        z-index: 2;
+    }
+
+    div.tp4-simple-layout > div.body > div > div.nav > div {
+        position: relative;
+        width: 100%;
+        background: rgba(255,255,255,.8);
+        height: auto;
+    }
+
+    div.tp4-simple-layout.hide-nav > div.body > div > div.nav {
+        transition: transform .3s;
+        transform: translateY(100%);
+        width: 100%
+    }
+
+    div.tp4-simple-layout.hide-nav > div.body > div > div.nav > div {
+        transition: none;
+        transform: none;
+    }
+
+    div.tp4-simple-layout > div.body {
+        top: 48px;
+        height: calc(100% - 48px);
+    }
+
+    div.tp4-simple-layout > header {
+        height: 48px;
+        border-radius: 0 48px 0 0;
+        font-size: 24px;
+    }
+
+    div.tp4-simple-layout > header > div.flex {
+        margin: 0 48px 0 0;
+        height: 48px;
+    }
+
+    div.tp4-simple-layout > header > div.flex > div {
+        height: 48px;
+    }
+
+    div.tp4-simple-layout > header > div.hemidisk {
+        top: 48px;
+        width: 96px;
+        height: 48px;
+        border-radius: 0 0 48px 48px;
+    }
+
+    div.tp4-simple-layout > header > div.logo {
+        width: 96px;
+        height: 96px;
+    }
+}

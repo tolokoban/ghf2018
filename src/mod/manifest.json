@@ -1,0 +1,18 @@
+{
+    "name": "Geneva Health Forum 2018",
+    "short_name": "GHF-2018",
+    "icons": [{
+        "src": "/ghf2018/icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }, {
+        "src": "/ghf2018/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "start_url": "/ghf2018/",
+    "display": "standalone",
+    "background_color": "#3E4EB8",
+    "theme_color": "#2F3BA2",
+    "orientation": "portrait"
+}

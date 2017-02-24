@@ -1,24 +1,17 @@
-function $(id) {
-    return window.document.getElementById(id);
-}
+"use strict";
 
-function setLanguage(lang) {
-    require("$").lang(lang);
-    window.location = "index.html";
-}
+require("icons");
+require("offline");
 
-$("welcome").textContent = _("welcome");
-$("fr").addEventListener(
-    "click",
-    function() {
-        setLanguage("fr");
-    },
-    false
-);
-$("en").addEventListener(
-    "click",
-    function() {
-        setLanguage("en");
-    },
-    false
-);
+var W = require("x-widget").getById;
+
+
+exports.onMenu = function() {
+    var layout = W('layout');
+    layout.showNav = !layout.showNav;
+};
+
+
+exports.start = function() {
+    W('layout').showNav = window.innerWidth > 999;
+};

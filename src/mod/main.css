@@ -1,7 +1,65 @@
-html {
-    background-image: url(main/background.jpg);
-    background-size: cover;
-    font-size: 16pt;
-    color: #000;
-    text-shadow: 3px 3px 1px #fff;
+@media (orientation: portrait) and (max-width: 479px) {
+    .only-big, .only-big * { display: none !important; }
+}
+@media (orientation: landscape) and (max-height: 479px) {
+    .only-big, .only-big * { display: none !important; }
+}
+
+@media (orientation: portrait) and (min-width: 480px) {
+    .only-small, .only-small * { display: none !important; }
+}
+@media (orientation: landscape) and (min-height: 480px) {
+    .only-small, .only-small * { display: none !important; }
+}
+
+
+div.title {
+    text-align: center;
+    font-size: 8vw;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #0C447E;
+    text-shadow: 1px 1px 1px rgba(255,255,255,.8),
+    -1px 1px 1px rgba(255,255,255,.8),
+    1px -1px 1px rgba(255,255,255,.8),
+    -1px -1px 1px rgba(255,255,255,.8);
+}
+
+div.subtitle {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+    color: #D89155;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8),
+    -1px 1px 1px rgba(0,0,0,.8),
+    1px -1px 1px rgba(0,0,0,.8),
+    -1px -1px 1px rgba(0,0,0,.8);
+}
+
+div.center {
+    text-align: center;
+}
+
+button#call-for-abstracts {
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: .8em;
+    background: #EA9316;
+    color: #fff;
+    font-variant: all-small-caps;
+    transition: all .3s;
+    margin: 3rem 0;
+}
+
+button#call-for-abstracts:hover {
+    background: #0D6287;
+    transition: all .3s;
+}
+
+
+p {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255,255,255,.8);
 }
